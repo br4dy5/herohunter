@@ -9,4 +9,6 @@ This script will search urlscan.io submissions for webpages that contain common 
     herohunter.py
 
 ## Customization
-No parameters/arguments are required. However, there are values that are currently hard-coded which can be revised, such as a domain whitelist.
+No parameters/arguments are required. However, there are values that are currently hard-coded which can be revised:
+* keyword list (Line 8) (ex: domains, hashes, files, etc. see: https://urlscan.io/search/# under 'Help & Examples)
+* domain whitelist (Line 11)
