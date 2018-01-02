@@ -11,7 +11,7 @@ kw_list = ["hash:7E50E406688BD898803F653058D14CA384734CB9B39BA900BC5E2734B59C073
 whitelist = ["onedrive.live.com"]
 
 # IPs associated with hits from keywords which will then be searched for connected domains
-ip_list = ['ip:221.121.138.3']
+ip_list = [""]
 
 # list of IDs for records in existing CSV list
 id_list = []
