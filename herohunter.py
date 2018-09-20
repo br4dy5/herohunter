@@ -35,18 +35,18 @@ def search(query):
             data = json.loads(resp.text)
 
             # iterate through JSON for pertinent info
-            for result in data["results"]:
-                submit_date = result["task"]["time"]
-                domain = result["page"]["domain"]
-                url = result["page"]["url"]
-                ip = result["page"]["ip"]
-                asn = result["page"]["asn"]
-                ptr = result["page"]["ptr"]
-                city = result["page"]["city"]
-                country = result["page"]["country"]
-                server = result["page"]["server"]
-                source = result["task"]["source"]
-                id = result["_id"]
+            for results in data["results"]:
+                submit_date = results["task"]["time"]
+                domain = results["page"]["domain"]
+                url = results["page"]["url"]
+                ip = results["page"]["ip"]
+                asn = results["page"]["asn"]
+                ptr = results["page"]["ptr"]
+                city = results["page"]["city"]
+                country = results["page"]["country"]
+                server = results["page"]["server"]
+                source = results["task"]["source"]
+                id = results["_id"]
 
                 # remove leading www. from domain
                 if domain.startswith("www."):
